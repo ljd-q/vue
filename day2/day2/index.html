@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <input type="text" v-bind:placeholder="inputValue">
+      <hr>
+      <img v-bind:src="imgSrc">
+    </div>
+    <script src="./src/main.js"></script>
+
+    <script>
+      import {createApp} from 'vue'
+      const vm=createApp({
+          el:'#app',
+          data:{
+              inputValue:'请输入内容',
+              imgSrc:'./image/logo.png',
+          },
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <!-- 声明被vue控制的区域 -->
+    <div id="app">
+        {{age}}
+    </div>
+    <!-- <div>{{age}}</div> -->
+    <script src="./lib/vue-2.6.12.js"></script>
+
+    <!-- 创建vue实例对象 -->
+    <script>
+        const vm=new Vue({
+            el:'#app',
+            data:{
+              username:'zs',
+              age:20
+            },
+        })
+        
+    </script>
+  </body>
+</html>
