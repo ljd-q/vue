@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <button @click="flag=!flag">Toggle Flag</button>
+        <p v-if="flag">请求成功---被v-if控制</p>
+        <p v-show="flag">请求成功---被v-show控制</p>
+        <p v-if="num<0.5">随机数小于0.5</p>
+        <p v-else>随机数大于0.5</p>
+        <!-- v-else-if -->
+    </div>
+
+    <script src="./lib/vue-2.6.12.js"></script>
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            // 声明处理函数的节点
+            data: {
+                //用来控制显示或隐藏
+                flag:true,
+                num:Math.random(),
+                type:'A'
+            },
+            methods: {
+
+            },
+        })
+    </script>
+</body>
+
+</html>

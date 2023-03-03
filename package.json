@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "then-fs": "^2.0.0"
+    "then-fs": "^2.0.0",
+    "vue-snippets": "^0.0.2"
   }
 }
